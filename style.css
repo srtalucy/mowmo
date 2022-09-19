@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: grey;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 8fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+.card1{
+   
+    grid-area: card1;
+}
+.card2{
+   
+    grid-area: card2;
+}
+.card3{
+    
+    grid-area: card3;
+}
+.card4{
+    
+    grid-area: card4;
+}
+.card5{
+    
+    grid-area: card5;
+}
+.card6{
+   
+    grid-area: card6;
+}
+header{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+   grid-area: header;
+}
+footer{
+   grid-area: footer;
+    text-align: center;
+}
+#grilla{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card6"
+   ;
+   grid-gap: 50px;
+  
+}
+main{
+    grid-area: main;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+main article img{
+    height: 150px;
+    width: 370px;
+    margin-top: 0.5em;
+}
+main article h6{
+    color: grey;
+}
+main div{
+    border: 5px solid red;
+    background-color: white;
+    padding: 1em;
+    margin-top: 1em;
+   transition: transform 0.2s;
+   position: relative;
+}
+main div:hover{
+    transform: scale(1.1)
+
+}
+main div span{
+    background-color: red;
+  
+    color: white;
+   
+    
+}
+main div section img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10em;
+    border-style: double;
+}
+
+main div section{
+    display: flex;
+    flex-direction: row; 
+    margin-top: 1em;   
+}
+main div section h3{
+    color: black;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+main div article{
+    color: black;
+    
+}
+
+@media screen and (max-width:1024px) {
+    #grilla{
+       
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+       ;
+    }
+}
+@media screen and (max-width:576px) {
+
+     #grilla{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+       ;
+    }
+    
+}
+button{
+    padding: 1em;
+    background-color: red;
+    color: white;
+    
+}

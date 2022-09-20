@@ -43,15 +43,18 @@ body{
     grid-area: card6;
 }
 header{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    
     margin-top: 2em;
    grid-area: header;
+   display: flex;
+  
+   justify-content: center;
 }
 footer{
+    margin-top: 1em;
    grid-area: footer;
     text-align: center;
+    
 }
 #grilla{
     display: grid;

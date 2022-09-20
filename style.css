@@ -91,7 +91,7 @@ main div:hover{
 }
 main div span{
     background-color: red;
-  
+  border: 5px solid red;
     color: white;
    
     

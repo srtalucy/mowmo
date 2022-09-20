@@ -46,9 +46,7 @@ header{
     
     margin-top: 2em;
    grid-area: header;
-   display: flex;
-  
-   justify-content: center;
+text-align: center;
 }
 footer{
     margin-top: 1em;
